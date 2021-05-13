@@ -17,23 +17,28 @@ export default {
   name: "BookList",
   data() {
     return {
+      filters: ["bought", "borrowed"],
+      holding: "bought",
       title: "All Books",
       states: ["Want to Read", "Read", "Reading"],
       books: [
         {
           title: "Self-Reliance",
           author: "Ralph Waldo Emerson",
-          finishedReading: true
+          finishedReading: true,
+          borrowed: "borrowed",
         },
         {
           title: "American Gods",
           author: "Neil Gaiman",
-          finishedReading: false
+          finishedReading: false,
+          borrowed: "bought",
         },
         {
           title: "Amusing Ourselves to Death",
           author: "Neil Postman",
-          finishedReading: true
+          finishedReading: true,
+          borrowed: "borrowed",
         }
       ]
     };
